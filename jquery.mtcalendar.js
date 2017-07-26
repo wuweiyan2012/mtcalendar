@@ -36,7 +36,6 @@
         this.currentDay = tempdate.getDate();
 
         createCalendar.call(this);
-        initCalendar.call(this);
     };
 
     function createCalendar(){
@@ -77,6 +76,10 @@
 
         showCurrentMonth.call(this);
 
+        initCalendar.call(this);
+
+        //分发创建完成事件
+        this.$container.trigger("mt.cldr.created", [this.currentYear, this.currentMonth]);
     };
 
      function initCalendar(){
@@ -113,10 +116,6 @@
 
         //初始化日历表格内部事件
         bindEvent.call(this);
-
-        //分发创建完成事件
-        this.$container.trigger("mt.cldr.created", [this.currentYear, this.currentMonth]);
-
 
         var tempdate = new Date(this.options.date);
         if(this.currentYear == tempdate.getFullYear() && this.currentMonth == tempdate.getMonth() + 1){
