@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+*{ margin:0px; padding:0px; box-sizing: border-box; }
+
+html {
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft YaHei", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti;
+}
+
+body {
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+a
+{  text-decoration: none;
+    color: #333;
+}
+
+.cldr {
+    font-size: 14px;
+    padding: 0 0.3rem; }
+.cldr .cldr-month {
+    margin: 0.4rem 1.0rem;
+    text-align: center;
+    height: 0.48rem;
+    line-height: 0.48rem; }
+.cldr .cldr-month .month-current {
+    font-size: 20px; }
+.cldr .cldr-month .month-prev {
+    float: left;
+    width: 0.48rem;
+    text-align: center; }
+.cldr .cldr-month .month-next {
+    float: right;
+    width: 0.48rem;
+    text-align: center; }
+.cldr .cldr-wraper {
+    margin-bottom: 0.3rem; }
+.cldr .cldr-wraper .cldr-thead {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #4A4A4A;
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background-color: #FAFAFA; }
+.cldr .cldr-wraper .cldr-thead li {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+.cldr .cldr-wraper .cldr-tbody {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+.cldr .cldr-wraper .cldr-tbody li {
+    border-bottom: 1px solid #DEDEDE;
+    -webkit-flex: 0 1 14.285147%;
+    -ms-flex: 0 1 14.285147%;
+    flex: 0 1 14.285147%;
+    height: 0.88rem;
+    padding-top: 0.20rem; }
+.cldr .cldr-wraper .cldr-tbody li .day {
+    color: #221814;
+    display: inline-block;
+    width: 0.48rem;
+    height: 0.48rem;
+    line-height: 0.50rem;
+    border-radius: 0.24rem; }
+.cldr .cldr-wraper .cldr-tbody li.disabled .day {
+    color: #cccccc; }
+.cldr .cldr-wraper .cldr-tbody li.selected .day {
+    color: white;
+    background-color: #FF3B00; }
+.cldr .cldr-wraper .cldr-tbody li .course-bedge {
+    position: relative;
+    top: 2px;
+    width: 100%;
+    text-align: center;
+    font-size: 0px; }
+.cldr .cldr-wraper .cldr-tbody li .course-bedge i {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0px 1px; }
+.cldr .cldr-wraper .cldr-tbody li .course-bedge i.personal {
+    background-color: #7ED321; }
+.cldr .cldr-wraper .cldr-tbody li .course-bedge i.small {
+    background-color: #27D0D8; }
+.cldr .cldr-wraper .cldr-tbody li .course-bedge i.league {
+    background-color: #FC9316; }
