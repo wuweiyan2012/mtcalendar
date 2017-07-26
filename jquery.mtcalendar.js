@@ -7,7 +7,7 @@
     "use strict";
 
     var _DEFAULTS = {
-        date: (new Date()).getFullYear() + "-" + pad((new Date()).getMonth() + 1, 2) + "-" + pad((new Date()).getDate(), 2),
+        date: (new Date()).getFullYear() + "/" + pad((new Date()).getMonth() + 1, 2) + "/" + pad((new Date()).getDate(), 2),
         onDaySelected: null,
         onMonthChanged: null,
         onCreated: null,
@@ -216,7 +216,7 @@
     };
 
     Plugin.prototype.getCurrentDate = function(){
-        return this.currentYear + "-" + pad(this.currentMonth, 2) + "-" + pad(this.currentDay, 2);
+        return this.currentYear + "/" + pad(this.currentMonth, 2) + "/" + pad(this.currentDay, 2);
     };
 
     $.fn.mtcalendar = function(options){
